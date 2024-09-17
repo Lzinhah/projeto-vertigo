@@ -4,43 +4,66 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root{
     --gray-800: #1E293B;
     --gray-600: #475569;
     --purple: #7c3aed;
     --gray-200: #e2e8f0;
     --gray-400: #94a3b8;
+    --white: #fff;
 }
 
-header {
+header{
+    background-image: url(./imagens/bg-mobile.png);
+    background-size: cover;
+    height: 8.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.7rem;
+}
+main{
+    padding-inline: 1.5rem;
+}
+.descricao h1{
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+    font-size: 1.5625rem;
+}
+.descricao p{
+    font-size: 0.8125rem;
+    color: var(--gray-600);
+    margin-bottom: 2.5rem;
+}
 .input-box{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     margin-bottom: 1rem;
 }
-
-.input-box div {
+.input-box div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login label{
+    font-size: 0.875rem;
+    color: var(--gray-800);
     font-weight: 600;
 }
-
 .login input{
     padding: 1rem 0.75rem;
     border: 1px solid var(--gray-200);
     border-radius: 0.25rem;
     color: var(--gray-800);
 }
-
 .login input::placeholder{
     color: var(--gray-400);
 }
-
 .login input:hover,
 .login input:focus{
     outline: 1px solid var(--purple);
 }
-
 .login a{
     color: var(--purple);
     text-decoration: none;
@@ -49,4 +72,16 @@ header {
 }
 .login a:hover{
     text-decoration: underline;
+}
+
+.login button{
+    margin-top: 1rem;
+    padding-block: 1rem;
+    width: 100%;
+    background: var(--purple);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
 }
