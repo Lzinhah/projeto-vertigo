@@ -100,16 +100,29 @@ main{
 
 
 @media(min-width: 1000px){
+    body{
+        display: flex;
+    }
+
     header{
         background: none;
         justify-content: flex-start;
+        padding-inline: 7rem;
     }
 
     header img{
         width: 10rem;
     }
-
     main{
         padding-inline: 7rem;
+    }
+
+    .conteudo{
+        width: 100%;
+    }
+
+    .bg-desktop{
+        display: block;
+        width: 100%;
     }
 }
