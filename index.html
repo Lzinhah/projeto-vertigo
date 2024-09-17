@@ -4,42 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertigo</title>
     <link rel="stylesheet" href="style.css">
+    <title>Vertigo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <img src="./imagens/logo.svg" alt="">
-    </header>
+    <div class="conteudo">
+        <header>
+            <img src="./imagens/logo.png" alt="logo">
+        </header>
 
-    <main>
-        <section class="descricao">
-            <h1>Acesse a plataforma</h1>
-            <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje</p>
-        </section>
+        <main>
+            <section class="descricao">
+                <h1>Acesse a plataforma</h1>
 
-        <section class="login">
-            <form action="">
-                <div class="input-box">
-                    <label for="email">E-mail</label>
-                    <input type="email" placeholder="Digite seu e-mail" id="email">
-                </div>
-                <div class="input-box">
-                    <label for="senha">Senha</label>
-                    <a href="">Esqueceu a senha?</a>
-                    <input type="password" placeholder="Digite sua senha" id="senha">
-                </div>
-                <button>Entrar</button>
-            </form>
-            <p>
-                Ainda não tem uma conta? <a href="">Inscreva-se</a>
-            </p>
-        </section>
-    </main>
+                <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+            </section>
+
+            <section class="login">
+                <form action="">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" placeholder="Digite seu E-mail" id="email">
+                    </div>
+                    <div class="input-box">
+                        <div>
+                            <label for="senha">Senha</label>
+                            <a href="">Esqueceu a senha?</a>
+                        </div>
+                        <input type="password" placeholder="Digite sua senha" id="senha">
+
+                    </div>
+
+                    <button>Entrar</button>
+                </form>
+
+                <p>
+                    Ainda não tem uma conta? <a href="">inscreva-se</a>
+                </p>
+            </section>
+        </main>
+    </div>
+    <div class="bg-desktop">
+        <img src="./imagens/bg-desktop.png" alt="background bg-desktop">
+    </div>
 </body>
-
-</html>
