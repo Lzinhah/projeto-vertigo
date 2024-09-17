@@ -95,4 +95,21 @@ main{
 .login>p a{
     font-weight: 700;
     font-size: 1rem;
+    color: var(--purple);
+}
+
+
+@media(min-width: 1000px){
+    header{
+        background: none;
+        justify-content: flex-start;
+    }
+
+    header img{
+        width: 10rem;
+    }
+
+    main{
+        padding-inline: 7rem;
+    }
 }
